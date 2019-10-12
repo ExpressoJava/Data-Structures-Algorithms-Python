@@ -1,5 +1,5 @@
 """
-Linear(Sequential) Search - When data items are stored in a collections such as a list, we can say they have a linear/quential relationship.
+Linear(Sequential) Search - When data items are stored in a collections such as a list, we can say they have a linear/sequential relationship.
 
 Example: 
 Searching for "Harry Potter" book, from shelf in a poorly lit room how would you go about it?
