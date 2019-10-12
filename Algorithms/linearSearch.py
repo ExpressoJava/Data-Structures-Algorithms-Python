@@ -47,12 +47,17 @@ def sequential_search(alist, item):
     while position < len(alist):
         if alist[position] == item:
             return True
+
+        if alist[position] > item:
+            return False
+
         position += 1  # position = posistion + 1
 
     return False
 
 
-testList = [1, 3, 33, 9, 19, 20, 56, 12, 0]
+testListA = [1, 3, 33, 9, 19, 20, 56, 12, 0]  # unordered list
+testListB = [2, 8, 12, 26, 28, 38, 52, 62, 68, 202]  # ordered list
 
-print(sequential_search(testList, 3))  # True
-print(sequential_search(testList, 99))  # False
+print(sequential_search(testListA, 3))  # True
+print(sequential_search(testListB, 99))  # False
