@@ -39,7 +39,7 @@ Alogrithm:
 # print(binary_search(testlist, 117))  # True
 # print(binary_search(testlist, 300))  # False
 
-# Give list B = [2, 5, 7, 8, 9, 11, 15, 17], find if 3 is present in the list or not
+# Given list B = [2, 5, 7, 8, 9, 11, 15, 17], find if 3 is present in the list or not
 def binary_search(ls, data):
     first = 0
     last = len(ls) - 1
