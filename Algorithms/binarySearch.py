@@ -40,6 +40,7 @@ Alogrithm:
 # print(binary_search(testlist, 300))  # False
 
 # Given list B = [2, 5, 7, 8, 9, 11, 15, 17], find if 3 is present in the list or not
+# This is iterative binary search
 def binary_search(ls, data):
     first = 0
     last = len(ls) - 1
