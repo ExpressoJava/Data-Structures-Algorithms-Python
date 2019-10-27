@@ -79,3 +79,12 @@ def insertionSort(alist):
 
 
 print(insertionSort([5, 2, 1, 9, 0, 4, 6]))
+
+"""
+Conclusion:
+Insertion Sort works best with small number of elements and when an array is almost sorted. 
+Worse case runtime complexity: O(n*2)
+
+Works better than Bubble Sort. 
+
+"""
