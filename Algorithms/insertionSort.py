@@ -6,7 +6,7 @@ Algorithms:
 Sort an arr[] of size n
 Insertion sort(arr, n)
 Loop from -1 to n-1
-Pick and element arr[i] and inserrt it into sorted sequence arr[0...i-1]
+Pick an element arr[i] and inserrt it into sorted sequence arr[0...i-1]
 
 Example: 12, 11, 12, 5, 6
 Let us loop for i = 1 (second element of the array) to 4 (last element of the array)
