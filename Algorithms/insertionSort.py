@@ -35,25 +35,47 @@ ahead of their current position
 
 """
 
+# #Implementation
+# def insertionSort(arr):
 
-def insertionSort(arr):
+#     # Traverse through 1 to len(arr)
+#     for i in range(1, len(arr)):
 
-    # Traverse through 1 to len(arr)
-    for i in range(1, len(arr)):
+#         key = arr[i]
 
-        key = arr[i]
-
-        # Move elements of arr[0...i-1], that are greater than key
-        # to one position ahead of their current position
-        j = i - 1
-        while j >= 0 and key < arr[j]:
-            arr[j + 1] = arr[j]
-            j -= 1
-        arr[j + 1] = key
+#         # Move elements of arr[0...i-1], that are greater than key
+#         # to one position ahead of their current position
+#         j = i - 1
+#         while j >= 0 and key < arr[j]:
+#             arr[j + 1] = arr[j]
+#             j -= 1
+#         arr[j + 1] = key
 
 
-# Testing
-arr = [12, 11, 13, 5, 6]
-insertionSort(arr)
-for i in range(len(arr)):
-    print("% d" % arr[i])  # 5, 6, 11, 12, 13
+# # Testing
+# arr = [12, 11, 13, 5, 6]
+# insertionSort(arr)
+# for i in range(len(arr)):
+#     print("% d" % arr[i])  # 5, 6, 11, 12, 13
+
+
+# Another implementation
+def insertionSort(alist):
+
+    for i in range(1, len(alist)):
+
+        # element to be compared
+        current = alist[i]
+
+        # comparing the current element with the sorted portion and swapping
+        while i > 0 and alist[i-1] > current:
+            alist[i] = alist[i-1]
+            i = i-1
+            alist[i] = current
+
+        # print(alist)  # uncomment this print statement to see how the list gets sorted
+
+    return alist
+
+
+print(insertionSort([5, 2, 1, 9, 0, 4, 6]))
