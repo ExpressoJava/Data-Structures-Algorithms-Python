@@ -1,14 +1,14 @@
 """
 Bubble Sort:
-We start at the beginningof unsorted list and compare each element to its right hand 
+We start at the beginning of unsorted list and compare each element to its right hand 
 neigbhor. If the right hand neighbor/element is smaller gets shifted to the left.
 
-The above is repeated ntil we passed through the entire collection/array/list
+The above is repeated until we passed through the entire collection/array/list
 without performing a single swap/shift. With each pass the larger elements will "bubble"
 toward the right hand side of the collection
 
 Conclusion:
-We need n-1 passes through the collection for every elemnt to "bubble up"
+We need n-1 passes through the collection for every element to "bubble up"
 to its correct position
 
 Worse case runtime complexitiy: O(n2)
@@ -36,4 +36,4 @@ def bubbleSort(alist):
     return alist
 
 
-print(bubbleSort([10, 15, 9, 7, 5, 1, 55, 90]))
+print(bubbleSort([10, 15, 9, 7, 5, 1, 55, 90]))  # 1, 5, 7, 9, 10, 15, 55, 90
